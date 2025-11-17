@@ -48,3 +48,8 @@ Les lignes suivantes sont ajoutées comme données (<td>).
 Chaque valeur est insérée dans une cellule de tableau correspondante.
 
 while IFS=$'\t' read -r a b c d e : lit le fichier TSV ligne par ligne, en séparant les colonnes par des tabulations (\t).
+
+
+Au départ, j’avais commencé une version du projet qui passait par un fichier TSV intermédiaire avant la génération du HTML.
+Cette version fonctionnait mais ne correspondait pas exactement à ce qui était attendu dans le mini-projet 2.
+En plus, cela m’a entraîné dans des erreurs d’organisation du projet (mauvais dossiers, fichier non trouvé, etc.), ce qui m’a obligé à revoir la structure du dépôt et à corriger mon script.
