@@ -3,12 +3,76 @@
 <head>
   <meta charset="utf-8">
   <title>Mini-projet — PPE1</title>
+
+  <!-- Bulma CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+
+  <style>
+    body {
+      background-color: #f5f7fa;
+    }
+    .container {
+      background-color: #ffffff;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    h1.title {
+      color: #2a3b72;
+    }
+    h2.title.is-4 {
+      color: #3b5998;
+    }
+    a.button.is-link {
+      background-color: #4a69bd;
+      border-color: #4a69bd;
+    }
+    a.button.is-link:hover {
+      background-color: #2a3b72;
+      border-color: #2a3b72;
+    }
+    ul li {
+      margin-bottom: 0.5rem;
+    }
+  </style>
 </head>
+
 <body>
-  <h1>Mini-projet — Analyse d'URLs</h1>
-  <p>Ce mini-projet analyse des URLs et génère un tableau contenant les résultats.</p>
-  
-  <a href=" /Users/anesmeh/Documents/PPE1-2025/miniprojet/tableaux/tableau-fr.html 
-">Voir le tableau des résultats</a>
+  <section class="section">
+    <div class="container">
+
+      <h1 class="title">Mini-projet — Analyse d'URLs</h1>
+      <p class="subtitle">
+        Ce site présente le travail réalisé dans le cadre du mini-projet PPE1.
+        Un script Bash analyse une liste d’URLs et génère automatiquement un tableau contenant :
+      </p>
+
+      <ul>
+        <li>le numéro de ligne</li>
+        <li>l’URL correspondante</li>
+        <li>le code HTTP de la réponse</li>
+        <li>l’encodage détecté</li>
+        <li>le nombre de mots sur la page</li>
+      </ul>
+
+      <br>
+
+      <p>
+        Le tableau est automatiquement généré dans le dossier
+        <code>tableaux/</code> à partir du fichier d’URLs
+        <code>urls/fr.txt</code>.
+      </p>
+
+      <br>
+
+      <a class="button is-link" href="/Users/anesmeh/Documents/PPE1-2025/miniprojet/tableaux/tableau-fr.html" target="_blank">
+        Voir le tableau des résultats
+      </a>
+
+      <br><br><hr>
+
+
+    </div>
+  </section>
 </body>
 </html>
